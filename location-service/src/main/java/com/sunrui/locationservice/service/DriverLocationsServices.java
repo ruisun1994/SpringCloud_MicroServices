@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-public class DriverLocations {
+public class DriverLocationsServices {
     private String driverId;
 
     //key: location id
@@ -14,7 +14,7 @@ public class DriverLocations {
     private HashMap<Long, Location> locations;
     private long curLocationId;
 
-    public DriverLocations(String driverId) {
+    public DriverLocationsServices(String driverId) {
         this.driverId = driverId;
         this.locations = new HashMap<>();
         this.curLocationId = 0;
@@ -47,7 +47,7 @@ public class DriverLocations {
         }
         Location location = locations.get(locationId);
         location.setLatitude(newLocation.getLatitude());
-        location.setLongitide(newLocation.getLongitide());
+        location.setLongitude(newLocation.getLongitude());
         return true;
     }
 
@@ -58,5 +58,4 @@ public class DriverLocations {
         locations.remove(locationId);
         return true;
     }
-
 }

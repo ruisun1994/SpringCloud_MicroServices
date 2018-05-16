@@ -7,16 +7,16 @@ import java.time.LocalDateTime;
 public class Location {
 
     private double latitude;
-    private double longitide;
+    private double longitude;
     private long id;
     private LocalDateTime timestamp;
 
     public Location() {
     }
 
-    public Location(double latitude, double longitide) {
+    public Location(double latitude, double longitude) {
         this.latitude = latitude;
-        this.longitide = longitide;
+        this.longitude = longitude;
         this.timestamp = LocalDateTime.now();
     }
 
@@ -31,8 +31,8 @@ public class Location {
     }
 
     @JsonProperty
-    public double getLongitide() {
-        return longitide;
+    public double getLongitude() {
+        return longitude;
     }
 
     public void setId(long id) {
@@ -43,8 +43,8 @@ public class Location {
         this.latitude = latitude;
     }
 
-    public void setLongitide(double longitide) {
-        this.longitide = longitide;
+    public void setLongitude(double longitude) {
+        this.longitude = longitude;
     }
 
     public void setTimestamp(LocalDateTime timestamp) {
