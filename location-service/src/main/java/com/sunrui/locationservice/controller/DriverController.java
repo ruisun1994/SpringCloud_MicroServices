@@ -1,6 +1,6 @@
 package com.sunrui.locationservice.controller;
 
-import com.netflix.ribbon.proxy.annotation.Http;
+//import com.netflix.ribbon.proxy.annotation.Http;
 import com.sunrui.locationservice.entity.Driver;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
